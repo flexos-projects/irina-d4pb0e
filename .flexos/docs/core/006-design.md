@@ -1,111 +1,90 @@
 ---
-id: "006-design"
-title: "Design System"
+id: design
+title: 'Design System & Branding'
+description: 'Establishes the visual identity, branding guidelines, and core design principles for the IRINA project.'
 type: doc
 subtype: core
 status: draft
 sequence: 6
-tags: [design, brand, colors, typography, components]
+tags:
+  - design
+  - branding
+  - ui
+createdAt: '2023-10-27T10:00:00Z'
+updatedAt: '2023-10-27T10:00:00Z'
 ---
 
-# Design System
+## 1. Design Philosophy & Vibe
 
-> The visual identity and component language of the product. Everything a designer or developer needs to build consistent UI.
+The visual identity of IRINA is designed to be **Playful, Authentic, and Supportive**. It should feel energetic and modern, yet personal and approachable, avoiding the sterile, corporate aesthetic of many financial tools. The design must empower creators to express their own brand while maintaining a cohesive and intuitive user experience across the platform.
 
-## Brand Voice
+Our persona, Irina, is an indie musician and teacher with a love for pink and purple. The design system reflects this by using a vibrant, creative color palette and clean, modern typography. The overall vibe should feel like a creative's digital studio—organized, inspiring, and uniquely their own.
 
-How does this product speak? Describe the tone, personality, and communication style:
+**Core Principles:**
+*   **Clarity First:** The interface must be clean and intuitive. The primary goal is to make creating items and getting paid as simple as possible. White space is our friend.
+*   **Expressive & Personal:** While the core UI is consistent, the creator's public profile should feel like *their* space. The use of their profile picture, custom imagery for items, and a user-selected primary color is key.
+*   **Mobile-First:** A significant portion of traffic will come from social media links clicked on mobile devices. All pages, especially the public profile and checkout flow, must be flawlessly responsive and optimized for smaller screens.
+*   **Trustworthy & Secure:** As a platform handling payments, the design must convey security and professionalism. This is achieved through clean layouts, clear labeling, and the use of trusted elements like the Stripe Payment Element.
 
-- **Tone:** (professional, casual, playful, authoritative?)
-- **Voice:** (first person, second person, third person?)
-- **Personality traits:** (3-4 adjectives that describe the brand)
-- **Do:** (examples of on-brand copy)
-- **Don't:** (examples of off-brand copy)
+## 2. Color Palette
 
-## Color System
+The color palette is energetic and modern, balancing a vibrant primary color with a versatile accent and a range of functional neutrals.
 
-### Primary Palette
+*   **Primary (`primaryColor`):** `#ec4899` (Pink 500)
+    *   **Usage:** The main brand color. Used for primary buttons, active links, key calls-to-action, and as the default theme color for creator profiles. It's bold, confident, and creative.
 
-- **Primary:** #000000 (main brand color, used for CTAs and key elements)
-- **Accent:** #000000 (complementary color for highlights and secondary actions)
+*   **Accent (`accentColor`):** `#8b5cf6` (Violet 500)
+    *   **Usage:** Used for secondary actions, highlights, illustrations, and decorative elements. It complements the primary pink, adding depth and a touch of indie-rock flair.
 
-### Neutral Palette
+*   **Neutral Dark (`neutralDark`):** `#1a202c` (Gray 800)
+    *   **Usage:** The primary color for all body text, headlines, and dark UI elements. It provides strong, comfortable contrast against light backgrounds.
 
-- **Dark:** #000000 (text, headings)
-- **Medium:** #000000 (secondary text, borders)
-- **Light:** #000000 (backgrounds, cards)
-- **White:** #ffffff (page background)
+*   **Neutral Light (`neutralLight`):** `#f8fafc` (Slate 50)
+    *   **Usage:** The primary background color for the application, creating a clean, bright, and airy feel.
 
-### Semantic Colors
+*   **Supporting Neutrals:**
+    *   `#e2e8f0` (Slate 200): For borders, dividers, and disabled states.
+    *   `#94a3b8` (Slate 400): For secondary text, labels, and icons.
 
-- **Success:** #22c55e
-- **Warning:** #f59e0b
-- **Error:** #ef4444
-- **Info:** #3b82f6
+*   **System Colors:**
+    *   **Success:** `#22c55e` (Green 500)
+    *   **Warning:** `#f59e0b` (Amber 500)
+    *   **Error:** `#ef4444` (Red 500)
 
-### Color Usage
+## 3. Typography
 
-- Primary is used for: CTAs, links, active states, primary navigation
-- Accent is used for: secondary buttons, highlights, badges
-- Never use more than 3 colors on a single component
+Typography will be handled using a clean, modern, and highly-readable sans-serif font family.
 
-## Typography
+*   **Font Family:** `Poppins`
+    *   **Reasoning:** Poppins is a geometric sans-serif with a friendly and approachable feel. Its clean letterforms ensure excellent legibility at various sizes and weights, making it suitable for both headlines and body copy.
 
-### Font Stack
+*   **Hierarchy:**
+    *   **h1 / Page Titles:** Poppins Bold, 36px
+    *   **h2 / Section Titles:** Poppins Bold, 24px
+    *   **h3 / Sub-headings:** Poppins Semibold, 20px
+    *   **Body Text:** Poppins Regular, 16px
+    *   **Labels / Small Text:** Poppins Medium, 14px
 
-- **Headings:** (font family, weights used)
-- **Body:** (font family, weights used)
-- **Mono:** (font family, for code/data)
+## 4. UI Components & Patterns
 
-### Scale
+*   **Buttons:**
+    *   **Primary:** Solid background (`primaryColor`), white text. Used for the most important actions (e.g., 'Save & Publish', 'Pay Now').
+    *   **Secondary:** Outlined with `primaryColor` text and border, transparent background. Used for less critical actions (e.g., 'View Profile', 'Cancel').
+    *   **State:** Clear hover, active, and disabled states to provide user feedback.
 
-| Level | Size | Weight | Line Height | Use |
-|-------|------|--------|-------------|-----|
-| H1 | 2.5rem | 700 | 1.2 | Page titles |
-| H2 | 2rem | 600 | 1.3 | Section headers |
-| H3 | 1.5rem | 600 | 1.4 | Card titles |
-| Body | 1rem | 400 | 1.6 | Paragraphs |
-| Small | 0.875rem | 400 | 1.5 | Captions, labels |
+*   **Forms:**
+    *   Inputs will have a clean, minimalist design with a light gray border that becomes `primaryColor` on focus.
+    *   Labels will be placed above the input fields for clarity.
+    *   Validation messages will appear below the field in the 'Error' color.
 
-## Component Patterns
+*   **Cards:**
+    *   Used extensively for displaying `payment_items` on the public profile and dashboard.
+    *   Cards will have a subtle border-radius, a light box-shadow on hover to indicate interactivity, and a clear visual hierarchy for the image, title, description, and price.
 
-### Buttons
+*   **Navigation:**
+    *   **Public Site:** A simple header with the IRINA logo and 'Login'/'Sign Up' buttons.
+    *   **Authenticated Dashboard:** A persistent vertical sidebar on the left for primary navigation (Dashboard, Items, Payments, Settings), allowing the main content area to be the focus. The active link will be highlighted using `primaryColor`.
 
-- Primary: filled with primary color, white text
-- Secondary: outlined with primary color
-- Ghost: text only, no background
-- Sizes: sm (32px), md (40px), lg (48px)
-- All buttons have minimum 44px touch target on mobile
+## 5. Logo & Branding
 
-### Cards
-
-- Background: white (light mode) / dark neutral (dark mode)
-- Border radius: 12px
-- Padding: 16px (mobile), 24px (desktop)
-- Shadow: subtle on hover
-
-### Forms
-
-- Labels above inputs
-- Inline validation messages below fields
-- Input height: 44px minimum (mobile touch target)
-- Focus state: primary color ring
-
-## Layout Patterns
-
-- **Desktop:** Sidebar (240px) + main content area
-- **Tablet:** Collapsible sidebar + full-width content
-- **Mobile:** Bottom navigation (56px) + full-width content
-- **Max content width:** 1200px, centered
-
-## Spacing System
-
-Base unit: 4px. Use multiples: 4, 8, 12, 16, 24, 32, 48, 64, 96.
-
-## Accessibility
-
-- Minimum contrast ratio: 4.5:1 (AA) for body text, 3:1 for large text
-- Focus indicators on all interactive elements
-- Touch targets minimum 44x44px
-- Screen reader support for all dynamic content
-- Reduced motion support via `prefers-reduced-motion`
+The IRINA logo should be a simple, text-based logotype using the Poppins font, perhaps with a custom flourish or a subtle icon that represents connection or creation. The primary color (`#ec4899`) should be central to the logo's identity. The branding should feel personal and creator-first, as if it were a tool designed by a creator, for a creator.

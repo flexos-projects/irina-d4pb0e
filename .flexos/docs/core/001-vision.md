@@ -1,60 +1,66 @@
 ---
-id: "001-vision"
-title: "Vision & Strategy"
+id: vision
+title: 'Vision & Strategy'
+description: 'Defines the core problem, solution, target user, and unique value proposition for the IRINA project.'
 type: doc
 subtype: core
 status: draft
 sequence: 1
-tags: [vision, strategy, personas]
+tags:
+  - strategy
+  - vision
+  - product
+createdAt: '2023-10-27T10:00:00Z'
+updatedAt: '2023-10-27T10:00:00Z'
 ---
 
-# Vision & Strategy
+## 1. Introduction
 
-> The north star document. Defines what this product is, who it's for, and why it matters. Everything else flows from here.
+Project IRINA is a direct response to the needs of independent creators in the digital age. Named for its target persona—a multi-talented individual juggling teaching, music, and online community building—the platform's vision is to provide **"Your personal hub for sharing creativity and accepting support."** It aims to be the simplest, most personal way for creators like Irina to monetize their skills and passion without the technical overhead, impersonal branding, or high fees of existing platforms. Our goal is to bridge the gap between a simple payment link and a complex e-commerce store, offering a solution that is both powerful and deeply personal.
 
-## Vision Statement
+## 2. Problem Statement
 
-A clear, aspirational statement about what this product will become. Not a feature list — a future state. What does the world look like when this product succeeds?
+Independent creators, teachers, musicians, and artists face a significant challenge: monetizing their work directly and authentically. Current solutions are inadequate for their specific needs:
 
-## Mission
+*   **Complex E-commerce Platforms (e.g., Shopify, Gumroad):** These are overkill. They are designed for selling products at scale, requiring extensive setup, inventory management, and a business-oriented mindset. For a creator who simply wants to get paid for a one-hour lesson or accept a donation for a new song, this is a daunting and unnecessary burden.
+*   **Generic Payment Links (e.g., PayPal.Me, Stripe Payment Links):** While simple, these tools are impersonal and lack context. A bare link doesn't tell a story, showcase the creator's brand, or allow for a collection of different offerings. They feel transactional, not relational, and fail to provide a central, branded hub for a creator's audience.
+*   **Subscription Platforms (e.g., Patreon):** These are excellent for recurring support but are not designed for ad-hoc, one-off payments for specific services like a tutoring session or a single digital commission. They lock creators into a specific business model that may not fit their needs.
 
-The practical version of the vision. What does this product DO, day to day, for its users? One sentence that anyone on the team can repeat.
+The core problem is the absence of a middle ground: a platform that combines the simplicity of a payment link with the branding and context of a personal website, specifically tailored for individual creators who offer a mix of services and welcome fan support.
 
-## Problem
+## 3. Solution & Vision
 
-What pain point does this solve? Be specific — not "people need better tools" but "freelance photographers lose 3 hours per week chasing clients for gallery approvals." Include evidence if available.
+IRINA provides a streamlined, highly customizable platform for creators to generate shareable payment links for specific services and donation requests. Our solution is built on three pillars:
 
-## Solution
+1.  **Simplicity:** A creator can sign up, customize their profile, connect their payment provider (Stripe), and create their first shareable payment item in under ten minutes. The user flow, from onboarding to managing payments, is designed to be intuitive and frictionless.
+2.  **Personalization:** Every creator gets a beautiful, customizable public profile page (e.g., `irina.com/irina`). This page serves as their personal storefront, showcasing their bio, social links, and a curated list of their services and donation options. The design will be clean, modern, and reflect the creator's unique style, using their chosen colors and imagery.
+3.  **Direct Connection:** IRINA facilitates a direct financial and relational connection between the creator and their audience. Fans and students can easily see all the ways they can support the creator in one place and pay securely with just a few clicks. Funds are routed directly to the creator's connected Stripe account, ensuring transparency and speed.
 
-How does this product solve the problem? The elevator pitch. What's the core mechanism that makes things better?
+The long-term vision is to become the go-to 'link-in-bio' solution for any creator who needs to accept payments, transforming a simple link into a powerful, personal monetization engine.
 
-## Target Users
+## 4. Target User Persona
 
-### Primary Persona
+**Name:** Irina
+**Age:** 28
+**Occupation:** Freelance English Teacher & Indie Musician
 
-Describe the main user in detail — their role, frustrations, goals, technical comfort level, and what "success" looks like for them. Give them a name.
+**Bio:** Irina teaches English online to students around the world to support her true passion: writing and performing music inspired by artists like Kurt Cobain. She has a modest but engaged following on Instagram and YouTube, where she posts music covers and short English lessons. Her audience consists of both students who need to pay for lessons and fans who want to support her music.
 
-### Secondary Personas
+**Goals & Motivations:**
+*   Find a simple way to charge students for 30-minute or 1-hour lesson blocks.
+*   Collect donations from fans to help fund her next EP.
+*   Have a single, professional-looking link to put in her social media bios.
+*   Avoid the complexity of building a full website or using a clunky, corporate-feeling payment system.
+*   Maintain her personal brand, which is authentic, a bit edgy, and creative (pink and purple hues are her signature).
 
-Other user types who benefit from the product. Admins, managers, collaborators, viewers — whoever else interacts with the system.
+**Frustrations:**
+*   Sending PayPal invoices is cumbersome and unprofessional.
+*   A generic PayPal.Me link doesn't let her specify what the payment is for.
+*   Setting up a full e-commerce store feels like a waste of time and money for her simple needs.
+*   She wants her online presence to feel cohesive and true to her artistic identity.
 
-## Unique Value Proposition
+IRINA is built for the thousands of creators just like her.
 
-What makes this different from alternatives? Not just "better UI" — what's the structural advantage? Why will users switch from what they're doing now?
+## 5. Unique Value Proposition
 
-## Success Metrics
-
-How do we know this is working? Define 3-5 measurable outcomes:
-
-- **Activation:** (what does a successful first session look like?)
-- **Engagement:** (what does regular usage look like?)
-- **Retention:** (what keeps users coming back?)
-- **Growth:** (how does the product spread?)
-
-## Non-Goals
-
-Equally important: what is this product NOT? What features, markets, or approaches are explicitly out of scope? This prevents scope creep and keeps the team focused.
-
-## Competitive Landscape
-
-What alternatives exist? Direct competitors, indirect substitutes, and the "do nothing" option. Where does this product fit in the market?
+Unlike generic payment tools or complex e-commerce platforms, IRINA offers a **personalized, branded public profile that serves as a simple, elegant storefront for a creator's services and supporter donations.** Our unique value is the seamless integration of identity and transaction, empowering creators to monetize their passion on their own terms, under their own brand, with minimal setup and maximum authenticity.
